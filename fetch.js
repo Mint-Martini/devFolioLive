@@ -1,6 +1,6 @@
-const fs = require("fs");
+fs = require("fs");
 const https = require("https");
-const process = require("process");
+process = require("process");
 require("dotenv").config();
 
 const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
@@ -79,13 +79,10 @@ if (USE_GITHUB_DATA === "true") {
       data += d;
     });
     res.on("end", () => {
-      /* Hack to save profile data in multiple places since my own domain space not working to pull data from public */
-      ["./public/profile.json", "./src/profile.json"].forEach((path)=>{
-        fs.writeFile(path, data, function (err) {
-          if (err) return console.log(err);
-          console.log(`saved file to ${path}`);
-        });
-      })
+      fs.writeFile("./public/profile.json", data, function (err) {
+        if (err) return console.log(err);
+        console.log("saved file to public/profile.json");
+      });
     });
   });
 
