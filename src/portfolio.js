@@ -168,7 +168,7 @@ const workExperiences = {
       date: "Dec 2021 – May 2023",
       desc: "Grubhub is an online and mobile food ordering and delivery platform that connects users with local restaurants. Grubhub leverages extensive tech stacks including cloud computing (AWS, Azure), microservices architecture, containerization technolgies",
       descBullets: [
-        "I tackled a major issue with credential stuffing and fraudulent orders by co-leading the development of ARS (Abuse Response Service) — a Python-based microservice spanning several thousand lines of code. ",
+        "I tackled a major issue with credential stuffing and fraudulent orders by co-leading the development of ARS (Abuse Response Service) — a Python-based microservice spanning several thousand lines of code."
       ]
     },
     {
